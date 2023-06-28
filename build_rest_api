@@ -1,0 +1,8 @@
+import json
+
+def lambda_handler(event, context):
+    personId = event['queryStringParameters']['personId']
+    
+    print('The personId extracted from the GET request is' + str(personId))
+    # Call database with personId=5
+    return {'firstName':'Daniel}'
